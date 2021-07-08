@@ -1,0 +1,14 @@
+name: multiple trigger test
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '*.md'
+
+jobs:
+  expt-job-a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: do we have gh cli?
+        run: which gh

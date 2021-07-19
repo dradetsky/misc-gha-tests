@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: do we have gh cli?
         run: which gh
+      - name: do we have yq?
+        run: which yq
